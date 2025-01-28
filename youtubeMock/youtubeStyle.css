@@ -1,0 +1,315 @@
+.containerForHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sketch2 {
+    color: red;
+}
+
+#youlogo {
+    margin-left: 30px;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.SearchingAlt {
+    display: none;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid gray;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #f0f0f0;
+}
+
+.third-part {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.settings,
+.login-btn {
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-btn {
+    color: blue;
+}
+
+.third-part button:hover {
+    background-color: gray;
+}
+
+.sketch1 button {
+    background: white;
+    border: none;
+}
+
+.sketch1 button:hover {
+    background: gray;
+}
+
+.containeraside {
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 30px);
+    overflow-y: auto;
+}
+
+.containeraside button {
+    background: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.containeraside button:hover {
+    background: gray;
+}
+
+.home {
+    margin-top: 30px;
+}
+
+.containerForSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.video a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.video {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.poster img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vidInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.descri {
+    margin-top: 10px;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.profileImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.youtuberName h6 {
+    margin: 0;
+}
+
+.views {
+    margin-top: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.main {
+    display: flex;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    html {
+        font-size: 70%;
+    }
+
+    h4,h3 {
+        font-size: 3rem;
+    }
+
+    .profileImage img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .login-btn {
+        font-size: 80%;
+    }
+    button{
+        font-size: 5rem;
+    }
+    .sketch2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sketch1 {
+        display: block;
+    }
+
+    .profileImage img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .search-box.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: gray;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .containeraside {
+        display: none;
+    }
+
+    .containeraside.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .home, .shorts, .subssubscriptions, .History {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    .sketch2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .containeraside {
+        display: none;
+    }
+
+    .profileImage img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .login-btn {
+        font-size: 50%;
+    }
+    button{
+        font-size: 3rem;
+    }
+    .sketch2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        display: none;
+    }
+
+    .search-box.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: gray;
+    }
+
+    html {
+        font-size: 25%;
+    }
+
+    h4,h3 {
+        font-size: 3rem;
+    }
+
+    .profileImage img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .login-btn {
+        font-size: 25%;
+    }
+    .sketch2{
+        font-size: 3rem;
+    }
+}
