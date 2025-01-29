@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1 {
+ 
+    background-image: url('https://www.bosshunting.com.au/wp-content/uploads/2020/03/mercedes-g-class-stronger-than-time.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.part2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    position: absolute; 
+    bottom: 20px;
+    width: 100%;
+    padding: 0 20px; 
+    color: white; 
+}
+
+.part2 h1 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 0; 
+}
+
+.arrows {
+    display: flex;
+    gap: 10px; 
+}
+
+.arrows button {
+    color: aliceblue;
+    border-color: aliceblue;
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.firstPart .navbar {
+    /* background-color: grey; */
+    position: sticky; /* Ensure the navbar sticks */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Make sure it stays above other content */
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    justify-content: center; /* Centers child elements vertically */
+    text-align: center;
+    width: 100%; 
+    height: 100vh; 
+    box-sizing: border-box;
+    padding: 2rem; 
+    line-height: 1.5rem;
+}
+.section2 h2 {
+    margin-bottom: 1rem; 
+}
+.aboutBody {
+    max-width: 50%; 
+
+}
+
+.imagMain{
+    display: flex;
+   
+   
+    justify-content: center; /* Centers child elements vertically */
+    text-align: center;
+    width: 100%; 
+    height: auto; 
+    box-sizing: border-box;
+   
+   
+
+}
+.imagMain {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative; /* Make the container the reference point for positioning */
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0; /* Align the text at the bottom of the image */
+    left: 50%; /* Horizontally center */
+    transform: translateX(-50%); /* Adjust to truly center the text horizontally */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6); /* Optional: add a background to make text more readable */
+    padding: 10px 10px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    justify-content: center;
+    padding-top: 0;
+    
+}
+.section3 iframe{
+    width: 50rem;
+    height: 30rem;
+}
+.section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    justify-content: center; /* Centers child elements vertically */
+    text-align: center;
+    width: 100%; 
+    height: 100vh; 
+    box-sizing: border-box;
+    padding: 2rem; 
+    line-height: 1.5rem;
+}
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    justify-content: center; /* Centers child elements vertically */
+    text-align: center;
+    width: 100%; 
+    height: 100vh; 
+    box-sizing: border-box;
+    padding: 2rem; 
+    line-height: 1.5rem;
+}
+.section5 h2{
+    color: aliceblue;
+    padding-bottom: 2rem;
+}
+.footer {
+    background-color: #222;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+
+
+
